@@ -1,0 +1,15 @@
+{
+  // Command to restart Waybar when configs change
+  "killall waybar; sleep 0.5; waybar &": [
+    "$WAYBAR_CONFIG_DIR/config.jsonc",
+    "$WAYBAR_CONFIG_DIR/style.css"
+  ],
+  // Command to reload Hyprland when configs change
+  "hyprctl reload": [
+    "~/.config/hypr/autoexec.conf",
+    "~/.config/hypr/env.conf",
+    "~/.config/hypr/aesthetics.conf",
+    "~/.config/hypr/keybinds.conf",
+    "~/.config/hypr/monitors.conf"
+  ]
+}
